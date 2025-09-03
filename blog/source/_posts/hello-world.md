@@ -71,7 +71,7 @@ deploy:
    type: git
    repo: https://github.com/<你github的username>/<repo名稱>.git
    # example, https://github.com/hexojs/hexojs.github.io
-   branch: [published]
+   branch: gh-pages
 ```
 <!-- ```python
 print("你好")
