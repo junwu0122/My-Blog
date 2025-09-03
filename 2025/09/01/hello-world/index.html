@@ -13,7 +13,7 @@
 
 
 
-<title>將&#34;Blog&#34;架設到&#34;Github Pages&#34;上 | Jun&#39;s Code Note</title>
+<title>將&#34; Blog &#34;架設到&#34; Github Pages &#34;上 | Jun&#39;s Code Note</title>
 
 
 
@@ -203,7 +203,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">將&#34;Blog&#34;架設到&#34;Github Pages&#34;上</h1>
+            <h1 class="post-title">將&#34; Blog &#34;架設到&#34; Github Pages &#34;上</h1>
             
                 <div class="post-meta">
                     
@@ -221,15 +221,23 @@
         </header>
 
         <div class="post-content">
-            <h1 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h1><h2 id="下載”Node-js”"><a href="#下載”Node-js”" class="headerlink" title="下載”Node.js”"></a>下載”Node.js”</h2><p>下載LTS版本即可<br>安裝選預設就好</p>
+            <h1 id="前置作業"><a href="#前置作業" class="headerlink" title="前置作業"></a>前置作業</h1><h2 id="下載”-Node-js-“"><a href="#下載”-Node-js-“" class="headerlink" title="下載” Node.js “"></a>下載” Node.js “</h2><p>下載LTS版本即可<br>安裝選預設就好</p>
 <!-- # H1
 ## H2
 ### H3
 #### H4 -->
-<p>下載Node.js是為了npm套件來安裝”hexo”</p>
-<p>安裝後重開”Windows PowerShell”<br>先輸入”node”確認是否安裝完畢<br>輸入”.exit”離開後使用”npm”安裝hexo</p>
+<p>下載Node.js是為了npm套件來安裝” hexo “</p>
+<p>安裝後重開” Windows PowerShell “<br>先輸入” node “確認是否安裝完畢<br>輸入” .exit “離開後使用”npm”安裝hexo</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm.cmd install hexo-cli -g</span><br></pre></td></tr></table></figure>
 <p>有時候系統沒辦法直接使用npm指令<br>所以加上.cmd使用管理員權限</p>
+<h2 id="使用”-Hexo-“-一鍵部屬指令"><a href="#使用”-Hexo-“-一鍵部屬指令" class="headerlink" title="使用” Hexo “ 一鍵部屬指令"></a>使用” Hexo “ 一鍵部屬指令</h2><p>先建置一個你想放入網站code的資料夾<br>假設放在桌面,名字取” Blog “<br>使用”ls”指令確認有” Blog “資料夾後<br>使用”cd &#x2F;Blog”進到Blog的目錄下<br>輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+<p>使用ls指令會發現目錄下多了一個&#x2F;blog的資料夾<br>使用”cd &#x2F;blog”進到Blog&#x2F;blog的目錄下<br>輸入”code .”開啟VSCODE編輯器<br>叫出VSCODE裡的Git Bash(終端機Ctrl+&#96;),通常在+號旁邊的﹀裡找的到</p>
+<p>在Git Bash中輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>安裝相關套件完後輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>就能建立一個預設的hexo網頁了!</p>
 <!-- ```python
 print("你好")
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ol order list</span><br><span class="line"></span><br><span class="line">1. 123</span><br><span class="line">2. 123</span><br><span class="line">3. 123</span><br><span class="line"></span><br><span class="line">ul </span><br><span class="line"></span><br><span class="line">- 1</span><br><span class="line">- 2</span><br><span class="line">- 3 --&gt;</span><br><span class="line">### Create a new post</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
