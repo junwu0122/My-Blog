@@ -246,6 +246,13 @@
 <li>到專案資料夾(最外層)找到” _config.yml “並新增以下</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">   type: git</span><br><span class="line">   repo: https://github.com/&lt;你github的username&gt;/&lt;repo名稱&gt;.git</span><br><span class="line">   # example, https://github.com/hexojs/hexojs.github.io</span><br><span class="line">   branch: gh-pages</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>在Git Bash中執行</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;modify config&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>在 “_config.yml”設定檔中修改” URL “網址, ex: https:&#x2F;&#x2F;&lt;你Github的username&gt;.github.io&#x2F;&lt;專案名稱&gt;&#x2F;<br>🍭這樣就完成部屬的步驟了!</li>
+</ol>
 <!-- ```python
 print("你好")
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ol order list</span><br><span class="line"></span><br><span class="line">1. 123</span><br><span class="line">2. 123</span><br><span class="line">3. 123</span><br><span class="line"></span><br><span class="line">ul </span><br><span class="line"></span><br><span class="line">- 1</span><br><span class="line">- 2</span><br><span class="line">- 3 --&gt;</span><br><span class="line">### Create a new post</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
