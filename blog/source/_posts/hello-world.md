@@ -73,6 +73,16 @@ deploy:
    # example, https://github.com/hexojs/hexojs.github.io
    branch: gh-pages
 ```
+3. 在Git Bash中執行
+```
+hexo clean
+hexo g -d
+git add .
+git commit -m "modify config"
+git push
+```
+4. 在 "_config.yml"設定檔中修改" URL "網址, ex: https://<你Github的username>.github.io/<專案名稱>/
+🍭這樣就完成部屬的步驟了!
 <!-- ```python
 print("你好")
 ```
