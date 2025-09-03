@@ -45,6 +45,34 @@ npm install
 hexo server
 ```
 就能建立一個預設的hexo網頁了!
+但目前都只是建立在本地端而已
+
+## 如何架設到" Github Pages上 "
+
+### 建立一個" Github Repositories"
+名字假設取 My-blog
+Create完會有教學指令教你怎麼設定新的repo
+```
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin <替換成你的HTTPS 記得去掉"<>">
+git push -u origin main
+```
+這樣就建立好一個My-blog的repo並且進行push(上傳到github server)的動作
+
+### 部屬(Deploy)到" Github Pages "
+
+1. [安裝 hexo-deployer-git](https://www.npmjs.com/package/hexo-deployer-git)
+2. 到專案資料夾(最外層)找到" _config.yml "並新增以下
+```
+deploy:
+   type: git
+   repo: https://github.com/<你github的username>/<repo名稱>.git
+   # example, https://github.com/hexojs/hexojs.github.io
+   branch: [published]
+```
 <!-- ```python
 print("你好")
 ```
