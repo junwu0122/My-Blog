@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 筆記
+title: Jun's Code Note
 subtitle: ''
 description: ''
 keywords:
@@ -14,6 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://junwu0122.github.io/My-Blog
+root: /My-Blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

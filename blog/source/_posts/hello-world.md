@@ -1,19 +1,27 @@
 ---
-title: My First Post 
+title: 將"Blog"架設到"Github Pages"上
 ---
-# Python for 迴圈筆記
+# 前置作業
 
-## 基本用法
+## 下載"Node.js"
 
-```python
-for i in range (x)
-```
+下載LTS版本即可
+安裝選預設就好
 <!-- # H1
 ## H2
 ### H3
 #### H4 -->
+下載Node.js是為了npm套件來安裝"hexo"
 
-```python
+安裝後重開"Windows PowerShell"
+先輸入"node"確認是否安裝完畢
+輸入".exit"離開後使用"npm"安裝hexo
+```
+npm.cmd install hexo-cli -g
+```
+有時候系統沒辦法直接使用npm指令
+所以加上.cmd使用管理員權限
+<!-- ```python
 print("你好")
 ```
 ol order list
@@ -26,7 +34,7 @@ ul
 
 - 1
 - 2
-- 3
+- 3 -->
 ### Create a new post
 
 ``` bash
