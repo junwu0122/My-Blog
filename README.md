@@ -1,1 +1,1 @@
-Python study blog !
+** Python study blog **
